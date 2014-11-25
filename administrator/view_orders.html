@@ -1,0 +1,143 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Dent Cart</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/menu.css" rel="stylesheet" type="text/css" />
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="css/menu.js"></script>
+       <script>
+function disp_confirm_delete()
+{
+var r=confirm("Are you sure you want to delete")
+if (r==true)
+  {
+  return true;
+  }
+else
+  {
+  return false;
+  }
+}
+</script>
+
+</head>
+
+<body>
+<div id="wrapper">
+   <div id="header">
+ <div class="logo"><a href="home.php"><img src="images/logo.png" alt="" border="0" /></a></div>
+         <div class="top_menu_outer">
+           <div class="menu_top">
+<ul>
+<li>Welcome <strong>Admin</strong></li>
+
+<li><a href="#">Contact us</a></li></ul>
+</div>
+             </div>
+   <div class="time_outer" >Your last login time is</div> 
+      </div>
+         <div id="menu_outer">
+             <div id="menu">
+    <ul class="menu">
+        <li><a href="home.html" class="parent"><span>Home</span></a> </li>
+        <li><a href="#" class="parent"><span style="font-family:Arial, Helvetica, sans-serif;">Manage Categories</span></a>
+            <div><ul>
+                <li><a href="add_categories.html"><span>Add Categories</span></a></li>
+                <li><a href="view_categories.html" ><span>View Categories</span></a></li>
+                <li><a href="add_sub-categories.html"><span>Add  Sub-Categories</span></a></li>
+                <li><a href="view_sub-categories.html"><span>View  Sub-Categories</span></a></li>
+              
+            </ul></div>
+        </li>
+        <li><a href="#" class="parent"><span style="font-family:Arial, Helvetica, sans-serif;">Manage Products</span></a>
+            <div><ul>
+                <li><a href="add_product.html"><span>Add New Product</span></a></li>
+                <li><a href="view_products.html" ><span>View All Products</span></a></li>
+                
+              
+            </ul></div>
+        </li>
+        <li><a href="view_users.html" class="parent" ><span  style="font-family:Arial, Helvetica, sans-serif;">Manage Users</span></a>
+         <div><ul>
+                <li><a href="view_users.html" ><span>View Users</span></a></li>
+             
+
+              
+            </ul></div>
+        </li>
+        <li class="parent"><a href="view_orders.html"><span  style="font-family:Arial, Helvetica, sans-serif;">Manage Orders</span></a>
+         <div><ul>
+                <li><a href="view_orders.html" ><span>View Orders</span></a></li>
+              
+    
+              
+            </ul></div>
+        </li>
+       
+         
+         
+          <li class="parent"><a href="#"><span  style="font-family:Arial, Helvetica, sans-serif;">Manage Content</span></a>
+                <div><ul>
+                <li><a href="add_news.html" ><span>Add News</span></a></li>
+                <li><a href="view_news.html" ><span>View News</span></a></li>
+             <li><a href="add_sucess_stories.html" ><span>Add Sucess Stories</span></a></li>
+                <li><a href="view_stories.html" ><span>View Sucess Stories</span></a></li>
+              
+            </ul></div>
+          </li>
+           <li class="parent"><a href="#"><span  style="font-family:Arial, Helvetica, sans-serif;">Promo</span></a>
+                <div><ul>
+                <li><a href="generate.html" ><span>Generate</span></a></li>
+                <li><a href="view.html" ><span>View</span></a></li>
+            
+              
+            </ul></div>
+          </li>
+           <li><a href="logout.html"><span>Log Out</span></a></li>
+    </ul>
+</div>
+         </div>
+            <div id="content_outer">
+            <div style="float:left; width:98%; font-size:14px; padding-left:8px; "><a href="home.php" class="link">Home</a> >> <a href="view_orders.php" class="link" >View Orders</a></div>
+              <div class="ac_outer" >
+     <div class="vod_inner" align="center">
+       <div class="od_inner_in">
+          <div class="vc_inner_in_pod1">Order ID</div>
+             <div class="vc_inner_in_pod1">Customer ID</div> 
+                 <div class="vc_inner_in_pod1">Order Status</div> 
+                    <div class="vc_inner_in_pod11">Order Creation <br/>Date</div>
+                      <div class="vc_inner_in_pod1">Delivery Date</div>
+                        <div class="vc_inner_in_pod1">View Details</div>
+                          <div class="vc_inner_in_pod1">Change</div>
+                            <div class="vc_inner_in_pod1">Delete</div>
+                              <div class="vc_inner_in_pod2">Payment Status</div> 
+             </div>
+<div>No Orders to Show</div>
+<div class="<?php echo $class;?>">
+<div class="vc_inner_in_pod1"></div>
+             <div class="vc_inner_in_pod1"></div> 
+                 <div class="vc_inner_in_pod1"></div> 
+                    <div class="vc_inner_in_pod11"></div>
+                      <div class="vc_inner_in_pod1"></div>
+                        <div class="vc_inner_in_pod1"><a href="view_order_details.php?id=<?php echo $detail['id'];?>">View Details</a></div>
+                          <div class="vc_inner_in_pod1"><a href="change_order_status.php?id=<?php echo $detail['id'];?>">Change</a></div>
+                            <div class="vc_inner_in_pod1"><a href="delete_order.php?id=<?php echo $detail['id'];?>" onclick="return disp_confirm_delete()" value="Display a confirm box" >Delete</a></div>
+              <div class="vc_inner_in_pod2"></div>
+     </div>
+     </div>
+  </div>
+            </div>
+              <div id="footer">
+              
+              <div class="copy">Copyright © 2015 My Dent Cart
+Empowered By: VaaSS Information Technologies Pvt. Ltd. </div>
+  </div>
+</div>
+</body>
+</html>

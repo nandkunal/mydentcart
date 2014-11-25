@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Dent Cart</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/menu.css" rel="stylesheet" type="text/css" />
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="css/menu.js"></script>
+    <script>
+function disp_confirm()
+{
+var r=confirm("Are you sure you want to delete")
+if (r==true)
+  {
+  return true;
+  }
+else
+  {
+  return false;
+  }
+}
+</script>
+
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="header">
+      <div class="logo"><a href="home.php"><img src="images/logo.png" alt="" border="0" /></a></div>
+         <div class="top_menu_outer">
+           <div class="menu_top">
+<ul>
+<li>Welcome <strong>Admin</strong></li>
+
+<li><a href="#">Contact us</a></li></ul>
+</div>
+             </div>
+   <div class="time_outer" >Your last login time is</div> 
+      </div>
+         <div id="menu_outer">
+             <div id="menu">
+    <ul class="menu">
+        <li><a href="home.html" class="parent"><span>Home</span></a> </li>
+        <li><a href="#" class="parent"><span style="font-family:Arial, Helvetica, sans-serif;">Manage Categories</span></a>
+            <div><ul>
+                <li><a href="add_categories.html"><span>Add Categories</span></a></li>
+                <li><a href="view_categories.html" ><span>View Categories</span></a></li>
+                <li><a href="add_sub-categories.html"><span>Add  Sub-Categories</span></a></li>
+                <li><a href="view_sub-categories.html"><span>View  Sub-Categories</span></a></li>
+              
+            </ul></div>
+        </li>
+        <li><a href="#" class="parent"><span style="font-family:Arial, Helvetica, sans-serif;">Manage Products</span></a>
+            <div><ul>
+                <li><a href="add_product.html"><span>Add New Product</span></a></li>
+                <li><a href="view_products.html" ><span>View All Products</span></a></li>
+                
+              
+            </ul></div>
+        </li>
+        <li><a href="view_users.html" class="parent" ><span  style="font-family:Arial, Helvetica, sans-serif;">Manage Users</span></a>
+         <div><ul>
+                <li><a href="view_users.html" ><span>View Users</span></a></li>
+             
+
+              
+            </ul></div>
+        </li>
+        <li class="parent"><a href="view_orders.html"><span  style="font-family:Arial, Helvetica, sans-serif;">Manage Orders</span></a>
+         <div><ul>
+                <li><a href="view_orders.html" ><span>View Orders</span></a></li>
+              
+    
+              
+            </ul></div>
+        </li>
+       
+         
+         
+          <li class="parent"><a href="#"><span  style="font-family:Arial, Helvetica, sans-serif;">Manage Content</span></a>
+                <div><ul>
+                <li><a href="add_news.html" ><span>Add News</span></a></li>
+                <li><a href="view_news.html" ><span>View News</span></a></li>
+             <li><a href="add_sucess_stories.html" ><span>Add Sucess Stories</span></a></li>
+                <li><a href="view_stories.html" ><span>View Sucess Stories</span></a></li>
+              
+            </ul></div>
+          </li>
+           <li class="parent"><a href="#"><span  style="font-family:Arial, Helvetica, sans-serif;">Promo</span></a>
+                <div><ul>
+                <li><a href="generate.html" ><span>Generate</span></a></li>
+                <li><a href="view.html" ><span>View</span></a></li>
+            
+              
+            </ul></div>
+          </li>
+           <li><a href="logout.html"><span>Log Out</span></a></li>
+    </ul>
+</div>
+         </div>
+            <div id="content_outer">
+            <div style="float:left; width:98%; font-size:14px; padding-left:8px; "><a href="home.php" class="link">Home</a> >><a href="view_categories.php" class="link"> View Categories</a></div>
+              <div class="ac_outer" >
+     <div class="vc_inner" align="center">
+       <div class="vc_inner_in">
+          <div class="vc_inner_in_p1">Category Name</div>
+             <div class="vc_inner_in_p22">Edit</div> 
+                 <div class="vc_inner_in_p33">Delete</div> 
+             </div>
+       <div class="<?php echo $class;?>">
+     <div class="vc_inner_in_pa1"></div>
+             <div class="vc_inner_in_pa2"><a href="edit_categories.php?id=<?php echo $detail['id'];?>"><img src="images/edit_icon.png" alt="Edit" border="0" /></a></div> 
+                 <div class="vc_inner_in_pa3"><a href="delete_categories.php?id=<?php echo $detail['id'];?>"><img src="images/delete_icon.png" alt="delete" border="0" onclick="return disp_confirm()" /></a></div> 
+         </div>
+     </div>
+            </div>
+             <div id="footer">
+              
+              <div class="copy">Copyright © 2015 My Dent Cart
+Empowered By: VaaSS Information Technologies Pvt. Ltd. </div>
+  </div>
+
+</div>
+</body>
+</html>

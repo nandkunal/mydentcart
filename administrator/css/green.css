@@ -1,0 +1,301 @@
+/*===================================================================================*/
+/*  Green Color
+/*===================================================================================*/
+.primary-bg {
+  background-color: #198fff;
+  color: #FFF;
+}
+.primary-color {
+  color: #198fff;
+}
+.le-dropdown {
+  background-color: #198fff;
+}
+.le-dropdown.open {
+  background-color: #4d9b0e;
+}
+.le-button {
+  background-color: #198fff;
+}
+.le-button:hover {
+  background-color: #198fff;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  color: #198fff;
+}
+::-moz-selection {
+  background-color: #198fff;
+}
+::selection {
+  background-color: #198fff;
+}
+.social-icons li a:hover {
+  background-color: #198fff;
+}
+.le-color {
+  color: #198fff;
+}
+.navbar .navbar-toggle {
+  background-color: #4d9b0e;
+  border-color: #42830c;
+  border-radius: 0;
+}
+header .top-search-holder .contact-row i {
+  color: #198fff;
+}
+header .top-search-holder .search-area .search-button {
+  background-color: #198fff;
+}
+header .top-cart-row .wishlist-compare-holder a:hover {
+  color: #198fff;
+}
+header .top-cart-row .wishlist-compare-holder a:hover i {
+  color: #198fff;
+}
+header .top-cart-row .top-cart-holder .basket-item .price {
+  color: #198fff;
+}
+header .top-cart-row .top-cart-holder .basket-item-count .count {
+  background-color: #198fff;
+}
+.sidemenu-holder .side-menu .head {
+  background-color: #198fff;
+}
+.sidemenu-holder .side-menu .menu-item:hover,
+.sidemenu-holder .side-menu .menu-item.open {
+  border-color: #198fff;
+}
+.megamenu-horizontal .nav > li > a:hover,
+.megamenu-horizontal .nav > li > a:focus {
+  background-color: #198fff !important;
+}
+.megamenu-horizontal .dropdown:hover .dropdown-toggle:focus,
+.megamenu-horizontal .dropdown.open .dropdown-toggle:focus,
+.megamenu-horizontal .dropdown:focus .dropdown-toggle:focus,
+.megamenu-horizontal .dropdown:hover .dropdown-toggle,
+.megamenu-horizontal .dropdown.open .dropdown-toggle,
+.megamenu-horizontal .dropdown:focus .dropdown-toggle {
+  background-color: #198fff !important;
+}
+.breadcrumb-nav-holder .breadcrumb-item.current a {
+  color: #198fff;
+}
+.carousel-holder .title-nav .inverse {
+  color: #198fff;
+}
+.carousel-holder .title-nav .nav-holder a:hover {
+  color: #198fff !important;
+}
+.le-radio:checked + .fake-box:after {
+  background-color: #198fff;
+}
+.le-checkbox:checked + .fake-box {
+  background-color: #198fff;
+  border-color: #198fff;
+}
+.le-links li a:hover {
+  color: #198fff;
+}
+.accordion-widget .accordion .accordion-toggle {
+  color: #198fff;
+}
+.accordion-widget .accordion .accordion-toggle:after {
+  color: #198fff;
+}
+.dropdown .dropdown-menu {
+  border-top-color: #198fff;
+}
+.slider-selection {
+  background-color: #198fff;
+}
+.slider-handle {
+  border-color: #198fff;
+}
+#footer .widget .body li a:hover {
+  color: #198fff;
+}
+#footer .link-list-row .link-widget li a:hover {
+  color: #198fff;
+}
+h2 {
+  color: #198fff;
+}
+.iconic-link:hover {
+  color: #198fff;
+}
+.iconic-link:hover:before {
+  color: #198fff;
+}
+/*.dropdown{
+    .dropdown-menu{
+        box-shadow: inset 0px 2px 0px @primary-color, inset 0px 0px 0px 2px darken(@second-color,10%) ;
+        
+        &:before{
+            border-bottom-color: @primary-color;
+        }
+    }
+}*/
+.pagination li:hover a,
+.pagination li.current a {
+  color: #198fff !important;
+  border-color: #198fff;
+}
+.simple-link:hover {
+  color: #198fff;
+}
+#top-megamenu-nav { background:#3d6cba;
+  
+}
+#top-megamenu-nav .nav > li {
+  border-right-color: #4d9b0e;
+}
+#top-megamenu-nav .nav > li > a:hover,
+#top-megamenu-nav .nav > li > a:focus {
+  background-color: #198fff;
+}
+#top-megamenu-nav .nav > li.active a,
+#top-megamenu-nav .nav > li.active a:focus {
+  background-color: #198fff;
+}
+#top-megamenu-nav .nav > li .dropdown-toggle:focus {
+  background-color: #198fff !important;
+}
+#top-megamenu-nav .nav > li .dropdown-toggle:before {
+  border-bottom-color: #198fff;
+}
+#top-megamenu-nav .nav > li.open .dropdown-toggle {
+  background-color: #198fff;
+}
+#top-megamenu-nav .dropdown {
+  border-right-color: #4d9b0e;
+}
+#top-megamenu-nav .dropdown:hover .dropdown-toggle,
+#top-megamenu-nav .dropdown:focus .dropdown-toggle,
+#top-megamenu-nav .dropdown.active .dropdown-toggle,
+#top-megamenu-nav .dropdown:hover .dropdown-toggle:focus,
+#top-megamenu-nav .dropdown:focus .dropdown-toggle:focus,
+#top-megamenu-nav .dropdown.active .dropdown-toggle:focus {
+  background-color: #198fff;
+}
+#top-megamenu-nav .dropdown .dropdown-toggle:focus {
+  background-color: #198fff !important;
+}
+#top-megamenu-nav .dropdown .dropdown-toggle:before {
+  border-bottom-color: #198fff;
+}
+#top-megamenu-nav .dropdown.open .dropdown-toggle {
+  background-color: #198fff;
+}
+#cart-page .widget .buttons-holder .simple-link:hover {
+  color: #198fff;
+}
+#cart-page .items-holder .close-btn:hover:after {
+  color: #198fff;
+}
+#cart-page .items-holder .cart-item .title a:hover {
+  color: #198fff;
+}
+.nav-tabs li.active a,
+.nav-tabs li.active a:focus {
+  background-color: #198fff !important;
+}
+.nav-tabs li.active a:hover {
+  background-color: #62c512;
+}
+.btn-loadmore:hover i {
+  background-color: #198fff;
+}
+.le-quantity .minus:hover:after,
+.le-quantity .plus:hover:after {
+  color: #198fff;
+}
+.meta-row span a {
+  color: #198fff;
+}
+.comment-item .comment-body .author {
+  color: #198fff;
+}
+.product-item-holder .body .title a:hover {
+  color: #198fff;
+}
+.single-product-gallery .gallery-thumbs .next-btn:hover,
+.single-product-gallery .gallery-thumbs .prev-btn:hover {
+  background-color: #198fff;
+}
+.single-product-gallery .gallery-thumbs li a.active {
+  border-bottom-color: #198fff;
+}
+.grid-list-products .grid-list-buttons ul li.active a i {
+  color: #198fff;
+}
+.grid-list-products .grid-list-buttons ul li a:hover i {
+  color: #42830c;
+}
+@media (max-width: 767px) {
+  #top-megamenu-nav .nav {
+    border-color: #42830c !important;
+  }
+  #top-megamenu-nav .nav > .dropdown {
+    border-color: #42830c !important;
+  }
+}
+.sidebar .price-range-holder .filter-button a {
+  color: #198fff;
+}
+.sidebar .widget .product-list li a:hover {
+  color: #198fff;
+}
+.sidebar .widget .product-list .price .price-current {
+  color: #198fff;
+}
+.top-bar ul > li a:hover {
+  color: #198fff;
+}
+.logo-svg {
+  fill: #198fff;
+}
+.owl-carousel:hover .owl-prev:hover,
+.owl-carousel:hover .owl-next:hover {
+  color: #198fff;
+}
+.owl-pagination .owl-page.active span,
+.owl-pagination .owl-page:hover span {
+  background: #198fff;
+}
+.panel-group-faq .panel-faq .panel-heading .panel-title > a:after {
+  color: #198fff;
+}
+.panel-group-faq .panel-faq .panel-heading .panel-title > a:hover:after {
+  color: #198fff;
+}
+.posts .post .meta > li a:hover {
+  color: #198fff;
+}
+.blog-sidebar .le-links > li > a:hover {
+  color: #198fff !important;
+}
+.blog-sidebar .tagcloud a:hover {
+  color: #198fff !important;
+}
+.owl-carousel-blog .owl-pagination .owl-page:hover span,
+.owl-carousel-blog .owl-pagination .owl-page.active span {
+  background: none repeat scroll 0 0 #198fff;
+}
+.comment-item .comment-body .likes a:hover,
+.comment-item .comment-body .likes .icon:hover {
+  color: #198fff;
+}
+.comment-item .comment-body .likes .dislikes .icon:hover {
+  color: #198fff;
+}
+.comment-item .comment-body .comment-reply:hover {
+  color: #198fff;
+}
+.blog-sidebar .widget .recent-post-list h5 a:hover {
+  color: #198fff;
+}
+.logo2{ float:left; width:38%; font-family:Arial, Helvetica, sans-serif; font-size:5em; color:#198fff; }
+.logo1{ float:left; width:50%; color:#333; font-size:29px; margin-top:30px; font-size:2.2em; margin-left:0px;}

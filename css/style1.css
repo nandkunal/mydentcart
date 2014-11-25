@@ -1,0 +1,23 @@
+/* CSS Document */
+.right_side #slideshow {
+    position:relative;
+	width:100%;
+    height:350px;
+}
+
+.right_side #slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+.right_side #slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+.right_side #slideshow IMG.last-active {
+    z-index:9;
+}

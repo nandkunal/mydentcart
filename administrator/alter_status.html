@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Dent Cart</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/menu.css" rel="stylesheet" type="text/css" />
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="css/menu.js"></script>
+    <script type="text/javascript">
+    function checkValid(frm){
+	if((frm.category_name.value=="")||(frm.category_desc.value=="")){
+		
+		alert("All Fields are Mandatory");
+		return false;
+	}
+	else{
+		return true;
+	}
+	
+}
+
+</script>
+
+</head>
+
+<body>
+<div id="wrapper">
+   <div id="header">
+ <div class="logo"><a href="home.html"><img src="images/logo.png" alt="" border="0" /></a></div>
+         <div class="top_menu_outer">
+           <div class="menu_top">
+<ul>
+<li>Welcome <strong>Admin</strong></li>
+
+<li><a href="#">Contact us</a></li></ul>
+</div>
+             </div>
+   <div class="time_outer" >Your last login time is</div> 
+      </div>
+         <div id="menu_outer">
+             <div id="menu">
+    <ul class="menu">
+        <li><a href="home.html" class="parent"><span>Home</span></a> </li>
+        <li><a href="#" class="parent"><span style="font-family:Arial, Helvetica, sans-serif;">Manage Categories</span></a>
+            <div><ul>
+                <li><a href="add_categories.html"><span>Add Categories</span></a></li>
+                <li><a href="view_categories.html" ><span>View Categories</span></a></li>
+                <li><a href="add_sub-categories.html"><span>Add  Sub-Categories</span></a></li>
+                <li><a href="view_sub-categories.html"><span>View  Sub-Categories</span></a></li>
+              
+            </ul></div>
+        </li>
+        <li><a href="#" class="parent"><span style="font-family:Arial, Helvetica, sans-serif;">Manage Products</span></a>
+            <div><ul>
+                <li><a href="add_product.html"><span>Add New Product</span></a></li>
+                <li><a href="view_products.html" ><span>View All Products</span></a></li>
+                
+              
+            </ul></div>
+        </li>
+        <li><a href="view_users.html" class="parent" ><span  style="font-family:Arial, Helvetica, sans-serif;">Manage Users</span></a>
+         <div><ul>
+                <li><a href="view_users.html" ><span>View Users</span></a></li>
+             
+
+              
+            </ul></div>
+        </li>
+        <li class="parent"><a href="view_orders.html"><span  style="font-family:Arial, Helvetica, sans-serif;">Manage Orders</span></a>
+         <div><ul>
+                <li><a href="view_orders.html" ><span>View Orders</span></a></li>
+              
+    
+              
+            </ul></div>
+        </li>
+       
+         
+         
+          <li class="parent"><a href="#"><span  style="font-family:Arial, Helvetica, sans-serif;">Manage Content</span></a>
+                <div><ul>
+                <li><a href="add_news.html" ><span>Add News</span></a></li>
+                <li><a href="view_news.html" ><span>View News</span></a></li>
+             <li><a href="add_sucess_stories.html" ><span>Add Sucess Stories</span></a></li>
+                <li><a href="view_stories.html" ><span>View Sucess Stories</span></a></li>
+              
+            </ul></div>
+          </li>
+           <li class="parent"><a href="#"><span  style="font-family:Arial, Helvetica, sans-serif;">Promo</span></a>
+                <div><ul>
+                <li><a href="generate.html" ><span>Generate</span></a></li>
+                <li><a href="view.html" ><span>View</span></a></li>
+            
+              
+            </ul></div>
+          </li>
+           <li><a href="logout.html"><span>Log Out</span></a></li>
+    </ul>
+</div>
+         </div>
+            <div id="content_outer">
+            <div style="float:left; width:98%; font-size:14px; padding-left:8px; "><a href="home.html" class="link">Home</a> >> <a href="alter_status.html" class="link">Change Status</a></div>
+              <table width="500" border="0" align="center" cellpadding="0" cellspacing="0" style=" border:1px solid #CCC;">
+                <tr>
+                  <td height="50" colspan="2" align="right" valign="middle">&nbsp;</td>
+                  <td height="50" align="center">&nbsp;</td>
+                  <td height="50" align="center">&nbsp;</td>
+                </tr>
+                <form method="POST" action="" name="frm" onSubmit="">
+                  <tr>
+                    <td width="181" height="40" align="right" valign="middle" style="text-align:right;">Choose Action:</td>
+                    <td width="8" align="right" valign="middle">&nbsp;</td>
+                    <td width="258" height="40" align="center"><select size="1" name="status" style="height:25px; width:200px;"><option value="-1" selected="selected">Select</option><option value="0">Deactivate</option><option value="1">Activate</option></select></td>
+                    <td width="51" height="40" align="center"></td>
+                  </tr>
+                  <tr>
+                    <td width="181" height="40" align="right" valign="middle" style="text-align:right;">Enter Remarks:</td>
+                    <td width="8" align="right" valign="middle">&nbsp;</td>
+                    <td width="258" height="40" align="center"><input type="text" name="remarks" style="height:25px; width:200px;" /></td>
+                    <td width="51" height="40" align="center"></td>
+                  </tr>
+                 
+                  <tr>
+                    <td height="40" colspan="2" align="center">&nbsp;</td>
+                    <td height="40" align="center"><input type="submit" value="Submit"  class="btn1 bt btn-danger" name="submit"/></td>
+                    <td height="40" align="center">&nbsp;</td>
+                  </tr>
+                </form>
+                <tr>
+                  <td height="20" colspan="2" align="center">&nbsp;</td>
+                  <td height="20" align="center">&nbsp;</td>
+                  <td height="20" align="center">&nbsp;</td>
+                </tr>
+              </table>
+            </div>
+             <div id="footer">
+              
+              <div class="copy">Copyright © 2015 My Dent Cart
+Empowered By: VaaSS Information Technologies Pvt. Ltd. </div>
+  </div>
+
+</div>
+</body>
+</html>
