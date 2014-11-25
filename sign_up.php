@@ -31,7 +31,7 @@
                     </ul>
                 </li>
                 
-                <li><a href="#">Login</a></li>
+                <li><a href="sign_up.php">Login</a></li>
                 <li><a href="#">Contact</a></li>
                 
             </ul>
@@ -138,7 +138,7 @@
        <section class="section">
           <h2>Sign In</h2>
           <p>Hello, Welcome to your account</p>
-            <form action="" method="post" name="form" class="section-form">
+            <form action="checkLogin.php" method="post" name="form" class="section-form">
                <div class="field-row">
                     <label>Email</label>
                        <input name="email" type="email" class="le-input" id="email">

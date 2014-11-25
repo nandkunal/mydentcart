@@ -39,7 +39,7 @@
                     </ul>
                 </li>
                 
-                <li><a href="#">Login</a></li>
+                <li><a href="sign_up.php">Login</a></li>
                 <li><a href="#">Contact</a></li>
                 
             </ul>
