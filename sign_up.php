@@ -174,17 +174,21 @@
             <form action="registerUsers.php" method="post" name="form" class="section-form">
                <div class="field-row">
                     <label>First Name</label>
-                       <input name="fname" type="text" class="le-input" id="email">
+                       <input name="fname" type="text" class="le-input" id="fname" required="required">
 					   <label>Middle Name</label>
-                       <input name="mname" type="text" class="le-input" id="email">
+                       <input name="mname" type="text" class="le-input" id="mname">
 					   <label>Last Name</label>
-                       <input name="lname" type="text" class="le-input" id="email">
+                       <input name="lname" type="text" class="le-input" id="lname">
 					   <label>Primary Email</label>
-                       <input name="email" type="email" class="le-input" id="email">
+                       <input name="email" type="email" class="le-input" id="pemail" required="required">
 					   <label>Secondary Email</label>
-                       <input name="email1" type="email" class="le-input" id="email">
+                       <input name="email1" type="email" class="le-input" id="semail">
 					   <label>Mobile</label>
-                       <input name="mobile" type="text" class="le-input" id="email">
+                       <input name="mobile" type="text" class="le-input" id="mobile">
+                       <label>Password</label>
+                       <input name="password" type="password" class="le-input" id="password" required="required">
+                       <label>Password Again</label>
+                       <input name="password-again" type="password" class="le-input" id="password-again" required="required">
                </div>
                  <div class="buttons-holder">
                       <button type="submit" name="submit" class="le-button huge">Sign In</button>
