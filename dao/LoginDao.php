@@ -9,7 +9,7 @@ class LoginDao
 	
 	
 	
-		public function checkLogin($username,$pass){
+		public function checkLogin($email,$pass){
 	
 		        try
         {
@@ -24,8 +24,8 @@ class LoginDao
 		
 		  $pass=md5($pass);
 		  	$id=0;  
-          $stmt=$dbh->prepare("select id from t_users where username=? and password=?");
-		  $stmt->bindParam(1,$username);
+          $stmt=$dbh->prepare("select u.id from t_users u,t_registration r where r.primary_email=? and password=? and r.id=u.registration_id");
+		  $stmt->bindParam(1,$email);
 		  $stmt->bindParam(2,$pass);
 		  $stmt->execute();
 		  $row=$stmt->fetch();

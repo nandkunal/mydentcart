@@ -171,14 +171,23 @@
        <section class="section">
           <h2>Create New Account</h2>
           <p>Create your own Media Center account</p>
-            <form action="" method="post" name="form" class="section-form">
+            <form action="registerUsers.php" method="post" name="form" class="section-form">
                <div class="field-row">
-                    <label>Email</label>
+                    <label>First Name</label>
+                       <input name="fname" type="text" class="le-input" id="email">
+					   <label>Middle Name</label>
+                       <input name="mname" type="text" class="le-input" id="email">
+					   <label>Last Name</label>
+                       <input name="lname" type="text" class="le-input" id="email">
+					   <label>Primary Email</label>
                        <input name="email" type="email" class="le-input" id="email">
+					   <label>Secondary Email</label>
+                       <input name="email1" type="email" class="le-input" id="email">
+					   <label>Mobile</label>
+                       <input name="mobile" type="text" class="le-input" id="email">
                </div>
-               
                  <div class="buttons-holder">
-                      <button type="submit" class="le-button huge">Sign In</button>
+                      <button type="submit" name="submit" class="le-button huge">Sign In</button>
                  </div>
             </form>
        </section>

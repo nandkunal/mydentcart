@@ -1,3 +1,11 @@
+<?php
+session_start();
+require_once("autoload.php");
+$user=new ClsUsers();
+$user->setID($_SESSION['id']);
+$user->get();
+$details=$user->getRegistration();
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 <head>
@@ -28,19 +36,19 @@
     <nav class="top-bar animate-dropdown">
     <div class="container" >
        <ul >
-                <li><a href="#">Home</a></li>
+                <li><a href="#">Welcome <?php echo $details['FIRST_NAME'];?></a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle"  data-toggle="dropdown" href="#change-colors">Change Colors<span class="arrow"></span></a>
+                    <a class="dropdown-toggle"  data-toggle="dropdown" href="#change-colors">My Account<span class="arrow"></span></a>
 
                     <ul class="dropdown-menu" role="menu" >
-                        <li role="presentation"><a role="menuitem" class="changecolor green-text" tabindex="-1" href="#" title="Green color">Green</a></li>
-                        <li role="presentation"><a role="menuitem" class="changecolor blue-text" tabindex="-1" href="#" title="Blue color">Blue</a></li>
+                        <li role="presentation"><a role="menuitem" class="changecolor green-text" tabindex="-1" href="#" title="Green color">Settings</a></li>
+                        <li role="presentation"><a role="menuitem" class="changecolor blue-text" tabindex="-1" href="#" title="Blue color">Cart</a></li>
                        
                     </ul>
                 </li>
                 
-                <li><a href="sign_up.php">Login</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="logout.php">Logout</a></li>
                 
             </ul>
         
@@ -89,12 +97,12 @@
         <div class="basket">
           <a href="#">
                 <div class="basket-item-count">
-               <!-- <span class="count"></span>--><img src="images/icon-cart.png" alt="" /></div>
+                <span class="count">3</span><img src="images/icon-cart.png" alt="" /></div>
 
                 <div class="total-price-basket"> 
                     <span class="lbl">your cart:</span>
                     <span class="total-price">
-                        <span class="sign"></span><span class="value"></span>
+                        <span class="sign">$</span><span class="value">3219,00</span>
                     </span>
                 </div>
           </a>

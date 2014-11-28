@@ -2,10 +2,10 @@
 session_start();
 require_once("autoload.php");
 $dao = new LoginDao();
-$username=$_POST['username'];
+$email=$_POST['email'];
 $pass=$_POST['password'];
 //check empty and null validation
-$id= $dao->checkLogin($username,$pass);
+$id= $dao->checkLogin($email,$pass);
 if($id>0)
 {
 	$_SESSION['id']=$id;
@@ -14,6 +14,6 @@ header('location:home.php');
 }
 else
 {
-header('location:index.php?err=1');
+header('location:sign_up.php?err=1');
 }
 ?>
