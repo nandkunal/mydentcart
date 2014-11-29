@@ -29,7 +29,7 @@
     <div class="container" >
        <ul >
                 <li><a href="#">Home</a></li>
-                <li class="dropdown">
+               <!-- <li class="dropdown">
                     <a class="dropdown-toggle"  data-toggle="dropdown" href="#change-colors">Change Colors<span class="arrow"></span></a>
 
                     <ul class="dropdown-menu" role="menu" >
@@ -37,7 +37,7 @@
                         <li role="presentation"><a role="menuitem" class="changecolor blue-text" tabindex="-1" href="#" title="Blue color">Blue</a></li>
                        
                     </ul>
-                </li>
+                </li>-->
                 
                 <li><a href="sign_up.php">Login</a></li>
                 <li><a href="#">Contact</a></li>

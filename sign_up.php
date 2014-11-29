@@ -141,12 +141,12 @@
             <form action="checkLogin.php" method="post" name="form" class="section-form">
                <div class="field-row">
                     <label>Email</label>
-                       <input name="email" type="email" class="le-input" id="email">
+                       <input name="email" type="email" class="le-input" id="email" required="required">
                </div>
                
               <div class="field-row">
                 <label>Password</label>
-                  <input name="password" type="password" class="le-input" id="password">
+                  <input name="password" type="password" class="le-input" id="password" required="required">
                 </div>
             
              <div class="field-row">
@@ -180,11 +180,11 @@
 					   <label>Last Name</label>
                        <input name="lname" type="text" class="le-input" id="lname">
 					   <label>Primary Email</label>
-                       <input name="email" type="email" class="le-input" id="pemail" required="required">
+                       <input name="pemail" type="email" class="le-input" id="pemail" required="required">
 					   <label>Secondary Email</label>
-                       <input name="email1" type="email" class="le-input" id="semail">
+                       <input name="semail" type="email" class="le-input" id="semail">
 					   <label>Mobile</label>
-                       <input name="mobile" type="text" class="le-input" id="mobile">
+                       <input name="mobile" type="tel" class="le-input" id="mobile">
                        <label>Password</label>
                        <input name="password" type="password" class="le-input" id="password" required="required">
                        <label>Password Again</label>
